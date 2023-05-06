@@ -2,25 +2,26 @@
 using namespace std;
 int main()
 {
-    int a = 0, b = 1, c, Fibonacci;
+    int start = 0, end = 1, result, Fibonacci, i = 2;
     cin >> Fibonacci;
     if (Fibonacci == 1)
     {
-        cout <<a;
+        cout << start ;
     }
-    else if (Fibonacci == 2)
+    else if(Fibonacci == 2)
     {
-        cout << a <<" "<< b <<" ";
+        cout << start << " " << end;
     }
     else
     {
-        cout << a <<" "<< b <<" ";
-        for (int i = 2; i < Fibonacci; i++)
+        cout << start << " " << end << " ";
+        while (i < Fibonacci)
         {
-            c=a+b;
-            cout <<c<<" ";
-            a=b;
-            b=c;
+            result = start + end;
+            cout << result << " ";
+            start = end;
+            end = result;
+            i++;
         }
     }
     return 0;
