@@ -12,7 +12,7 @@ int main()
     if (fraction!=0)
     {
         cout <<"double";
-    }else if (res <= 2147483647)
+    }else if (fraction ==0 && res <= 2147483647)
     {
         cout <<"int";
     }else{
