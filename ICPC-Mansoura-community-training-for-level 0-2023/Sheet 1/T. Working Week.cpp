@@ -10,5 +10,6 @@ int main()
         long long days , daysOff;
         cin >> days;
         
+        
     }
 }
