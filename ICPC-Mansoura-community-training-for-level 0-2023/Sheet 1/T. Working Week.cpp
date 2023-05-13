@@ -7,9 +7,8 @@ int main()
     cin >> testCases;
     while (testCases--)
     {
-        long long days , daysOff;
+        long long days;
         cin >> days;
-        
-        
+        cout << (days/3)-2 << endl;
     }
 }
