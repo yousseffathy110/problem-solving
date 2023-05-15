@@ -1,39 +1,38 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
-int main()
+#define ll long long
+string test(ll a,ll b)
 {
-    ios_base::sync_with_stdio(0);
-    cin.tie(0);
-    cout.tie(0);
-
-    int r1, r2;
-    cin >> r1 >> r2;
-    int x1 , x2;
-    cin >> x1 >> x2;
-
-    if (r1 + x1  > 1600)
+    if(a>=1600&&b>=1600)
     {
-        cout << "Mr.Sadik";
+        if(a>b)
+            return "Mr.Sadik";
+        else 
+            return "Ramadan";
     }
-    else if (r2 + x2 > 1600)
+    if(a>=1600)
+        return "Mr.Sadik";
+    if(b>=1600)
+        return "Ramadan";
+    return "#";
+}
+signed main()
+{
+    ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+    ll n,m;cin>>n>>m;
+    ll x,y;cin>>x>>y;
+    string w=test(n,m);
+    if(w=="#")
     {
-        cout << "Ramadan";
+        w=test(n+x,m+y);
     }
-    else if (r1 + x1  > 1600 && r2 + x2 > 1600)
+    if(w=="#")
     {
-        if ((r1 + x1) > (r2 + x2))
-        {
-            cout << "Mr.Sadik";
-        }
-        else if ((r1 + x1) < (r2 + x2))
-        {
-            cout << "Ramadan";
-        }
-    }
-    else if (r1 + x1 == r2 + x2)
-    {
-        cout <<"None";
+        cout<<"None";
     }
     else
-        cout <<"None";
+    {
+        cout<<w;
+    }
+    return 0;
 }
