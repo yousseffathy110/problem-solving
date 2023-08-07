@@ -6,13 +6,8 @@ int main()
     ios_base::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
-    double x;
+    float x, z;
     cin >> x;
-    if (x == int(x))
-    {
-       cout << "int " << int(x);
-    }else
-    {
-        cout << "float " << x - int(x);
-    }
+    double y = modf(x, &z);
+    cout << y << "\n"<< z;
 }
