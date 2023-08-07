@@ -3,11 +3,5 @@ using namespace std;
 
 int main()
 {
-    ios_base::sync_with_stdio(0);
-    cin.tie(0);
-    cout.tie(0);
-    float x, z;
-    cin >> x;
-    double y = modf(x, &z);
-    cout << y << "\n"<< z;
+    
 }
