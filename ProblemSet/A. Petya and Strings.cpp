@@ -14,8 +14,8 @@ int main()
     cin >> x >> y;
     short size = x.length();
     for(short i=0;i<x.length();i++){
-        x[i]=toupper(x[i]);
-		y[i]=toupper(y[i]);
+        x[i]=toupper(x[i]); // x[i] += 32;
+		y[i]=toupper(y[i]); // y[i] += 32;
     }
     if (x < y)
         cout << -1;
