@@ -1,9 +1,14 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
+void fast()
 {
-    int arr[1000];
-    // cout << sizeof(arr) / sizeof(arr[0]);
-    cout << size(arr);
+    cin.sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+}
+
+int main() 
+{
+   fast();
 }
