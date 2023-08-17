@@ -10,5 +10,5 @@ void fast()
 
 int main() 
 {
-   fast();
+    fast();
 }
