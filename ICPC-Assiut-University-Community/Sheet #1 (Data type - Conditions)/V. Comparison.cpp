@@ -1,39 +1,20 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
-int main()
-{
-   int a,b;
-   char s;
-   cin>>a>>s>>b;
-   switch (s)
-   {
-   case '<':
-    if (a<b)
-    {
-        cout<<"Right";
+
+int main(){
+    int x, z;
+    char y;
+    cin>> x >> y >> z;
+    switch (y) {
+        case '=':
+            (x == z) ? cout<<"Right" : cout << "Wrong";
+        break;
+        case '<':
+            (x < z) ? cout<<"Right" : cout << "Wrong";
+        break;
+        case '>':
+            (x > z) ? cout<<"Right" : cout << "Wrong";
+        break;
     }
-    else{
-        cout<<"Wrong";
-    }
-    break;
-   case '>':
-    if (a>b)
-    {
-        cout<<"Right";
-    }
-    else{
-        cout<<"Wrong";
-    }
-    break;
-   case '=':
-    if (a==b)
-    {
-        cout<<"Right";
-    }
-    else{
-        cout<<"Wrong";
-    }
-    break;
-   }
-   return 0;
+    return 0;
 }
